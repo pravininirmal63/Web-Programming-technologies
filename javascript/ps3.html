@@ -1,0 +1,43 @@
+<html>
+  <body>
+    <script>
+      function Rectangle(length, width) {
+        this.length = length;
+        this.width = width;
+      }
+
+      Rectangle.prototype.calculateArea = function () {
+        return this.length * this.width;
+      };
+
+      Rectangle.prototype.calculatePerimeter = function () {
+        return 2 * (this.length + this.width);
+      };
+
+      function Circle(radius) {
+        this.radius = radius;
+      }
+      
+      Circle.prototype.calculateArea = function () {
+        return Math.PI * this.radius * this.radius;
+      };
+
+      Circle.prototype.calculateCircumference = function () {
+        return 2 * Math.PI * this.radius;
+      };
+
+      var rectangle = new Rectangle(5, 8);
+      var circle = new Circle(3);
+
+      console.log("Rectangle Dimensions: " + rectangle.length + "x" + rectangle.width);
+      console.log("Rectangle Area: " + rectangle.calculateArea());
+      console.log("Rectangle Perimeter: " + rectangle.calculatePerimeter());
+      
+
+      console.log("Circle Radius: " + circle.radius);
+      console.log("Circle Area: " + circle.calculateArea());
+      console.log("Circle Circumference: " + circle.calculateCircumference());
+    </script>
+  </body>
+  <div id="mydiv"></div>
+</html>
