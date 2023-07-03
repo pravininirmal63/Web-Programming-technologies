@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <script>
+            function validateName(){
+                let a=document.getElementById("t1").value
+                if(a==="" || a.test(/[0-9]/)===true){
+                    // alert()
+                    document.getElementById("msg").innerHTML="name should not contain number or empty"
+                    return false
+                }
+                // document.getElementById("msg").innerHTML="name should not contain number"
+                return true
+            }
+            
+            function validateContact(){
+                let a=document.getElementById("t4").value
+                if(a.match(/[a-z]/)===true)
+                {
+                    document.getElementById("msg").innerHTML="contact should shuld have only numbers"
+                    return false
+                }
+                return true
+                
+            }
+            
+            function validateDob(){
+                let a=document.getElementById("t4").value
+                let b=new Date();
+                // if()
+                return true
+                
+                
+            }
+            
+            function validateCourse(){
+                let  arr=document.getElementsByName("c")
+                count=0
+                for(let b of a){
+                    if(b.checked){
+
+                        count++
+                    }
+                }
+                if(count>1)
+                {
+                    return true
+                }
+                return false
+                
+            }
+            function validate(){
+                let a=validateName()
+                // alert()
+                let b=validateContact()
+                let c=validateDob()
+                let d=validateCourse()
+                if(a&&b&&c&&d){
+                    return true;
+                }
+                return false;
+            }
+            </script>
+    </head>
+    <body >
+        <form action="" method="get" onsubmit="return validate()">
+            <h1 align="center">Student Registration</h1>
+            <table align="center" >
+                <tbody >
+                    <tr>
+                        <td>name: </td>
+                        <td><input type="text" id="t1" name="t1"> 
+                        </td>
+                        <td>
+                        <pi id="msg"></p>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Adress: </td>
+                        <td><input type="text" id="t2" name="t2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>DOB: </td>
+                        <td><input type="date" id="t3" name="t3"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>contact No: </td>
+                        <td><input type="text" id="t4" name="t4"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td><input type="radio" id="t5" name="rad">male<input type="radio" id="t6" name="rad">female</td>
+                            
+                    </tr>
+                    <tr>
+                        <td>course:</td>
+                        <td><select name="c" id="c1">
+                            <option value="BCA">BCA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MBA">MBA</option>
+                        </select></td>
+                         
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="validate()">Submit</button></td>
+                        <td><button type="reset">Reset</button></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+            <h3 align="center">Happy Learning!</h3>
+
+        </form>
+    </body>
+</html>
