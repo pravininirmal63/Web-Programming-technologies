@@ -1,0 +1,73 @@
+<html>
+
+<body>
+
+    <form>
+        <table border="1" cellspacing="0" style="background-color: rgb(250, 181, 181);">
+            <tbody>
+                <tr>
+                    <td><label for="text1">Name</label></td>
+                    <td><input type="text" id="text1" name="text"></td>
+                    <!-- in for label id name is used to group the input and Name together -->
+                </tr>
+                <tr>
+                    <td><label for="text2">Employee Code</label></td>
+                    <td><input type="text" id="text2" name="text" size="3"></td>
+                </tr>
+                <tr>
+                    <td><label for="dept">Department</label></td>
+                    <td><input type="radio" id="admin" name="dept">
+                        <label for="admin">ADMIN</label><br>
+                        <input type="radio" id="hr" name="dept">
+                        <label for="hr">HR</label><br>
+                        <input type="radio" id="tech" name="dept">
+                        <label for="tech">TECHNICAL</label><br>
+                        <input type="radio" id="acc" name="dept">
+                        <label for="acc">ACCOUNTS</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Date of Joining</label></td>
+                    <td><input type="text" size="2"> /
+                        <input type="text" size="2"> /
+                        <input type="text" size="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea name="address" id="address" cols="35" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Training Program Attended</label></td>
+                    <td><input type="checkbox" id="prg1">
+                        <label for="prg1">HTML/DHTML</label><br>
+                        <input type="checkbox" id="prg2">
+                        <label for="prg2">JAVA</label> <br>
+                        <input type="checkbox" id="prg3">
+                        <label for="prg3">CLIENT/SERVER</label> <br>
+                        <input type="checkbox" id="prg4">
+                        <label for="prg4">.NET</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="add">Traiing Program need be Attend</label></td>
+                    <td><select name="add" id="add" size="2">
+                            <option value="">---select option--</option>
+                            <option value="">javaScript</option>
+                            <option value="">jQuery</option>
+                            <option value="">mysSQL</option>
+                            <option value="">Oracle</option>
+                            <option value="">MongoDB</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Send the information at</td>
+                    <td><a href="#"> empinfo@patni.com</a></td>
+                </tr>
+    </form>
+    </tbody>
+    </table>
+
+</body>
+
+</html>

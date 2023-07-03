@@ -1,0 +1,118 @@
+<html>
+
+<body style="margin-left: 200px; margin-right: 200px;">
+    <form action="">
+        <fieldset style="border-color: rgb(104, 143, 226); width: 950px;">
+            <h1>Internet Usage survey</h1>
+            <div>This survey is conducted to help identy internet usage patterns of out customers.</div>
+            <div>Please take a few moments to complete and submit this short form. Thank you for your operation</div>
+            <br>
+            <table style="width: 720px; margin-left: 30px;">
+                <tbody>
+                    <tr style="height: 120px;">
+                        <td>What type of internet connection do you have? <br>select one</td>
+                        <td><select name="sel" id="sel" size="4">
+                                <option value="">Dialup</option>
+                                <option value="">DGL</option>
+                                <option value="">High Speed cable</option>
+                                <option value="">Other</option>
+                            </select></td>
+                    </tr>
+                    <tr style="height: 40px;">
+                        <td><label for="id"> What type of computer do you use most at home?</label></td>
+                        <td><input type="radio" name="id" id="desk"><label for="desk">Desktop</label>
+                            <input type="radio" name="id" id="lp"><label for="lp">Laptop</label>
+                        </td>
+                    </tr>
+                    <tr style="height: 120px;">
+                        <td>How would you describe your main reason being using internet?</td>
+                        <td><input type="radio" id="do" name="sel1"><label for="do">Do you want to related activities
+                            </label> <br>
+                            <input type="radio" id="to" name="sel1"><label for="to">To-do school related
+                                activities</label>
+                            <br>
+                            <input type="radio" id="for" name="sel1"><label for="for">For entertain purpuse </label><br>
+                            <input type="radio" id="other" name="sel1"><label for="other">Other activities </label><br>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <fieldset style="width:fit-content; float: left; margin-left: 30px;">
+                <legend>Types of sites visited</legend>
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>What type ofweb sites do you access most often? <br>check all that apply <br>
+                                <input type="checkbox" id="s1"><label for="s1">self improvement</label><br>
+                                <input type="checkbox" id="s2"><label for="s2">Entertainment</label><br>
+                                <input type="checkbox" id="s3"><label for="s3">News and Sports</label><br>
+                                <input type="checkbox" id="s4"><label for="s4">Reference</label><br>
+                                <input type="checkbox" id="s5"><label for="s5">Email</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset style="width: fit-content; margin-left: 500px;">
+                <legend>Time spent using internet</legend>
+
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td>During an average week, how long you spend online><br>
+                                <input type="checkbox" id="s6"><label for="s6">0-3 Hours</label><br>
+                                <input type="checkbox" id="s7"><label for="s7">4-6 Hours</label><br>
+                                <input type="checkbox" id="s8"><label for="s8">7-10 Hours</label><br>
+                                <input type="checkbox" id="s9"><label for="s9">11-14 Hours</label><br>
+                                <input type="checkbox" id="s10"><label for="s10">15+ Hours</label>
+                                <br>
+                                <br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <br><br>
+            <div style="margin-left: 30px;">Plaese comment your opinions Concening Internet privacy and safety: <br>
+                <textarea name="abc" id="abc" cols="100" rows="5"></textarea>
+            </div>
+            <br>
+            <table style="height:130px; margin-left: 30px; width: 920px;">
+                <tbody>
+                    <tr style="width:30px">
+                        <td><label for="txt">firstName:</label>
+                            <input type="txt" id="txt" size="40" placeholder="eg. Pravin">
+                        </td>
+                        <td><label for="txt1">LastName:</la1bel>
+                                <input type="text" id="txt1" size="40" placeholder="eg. Nirmal">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="n1">Age:</label>
+                            <input type="number" id="n1" size="3" min="18" max="60">
+                        </td>
+                        <td><label for="n2">Zipcode:</label>
+                            <input type="text" id="n2" maxlength="7" placeholder="eg.423107">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <button type="submit" value="submit" autofocus>click to submit</button>
+                        </td>
+                        <td align="left">
+                            <button type="reset" autofocus>Clear Form</button>
+                        </td>
+                        <!-- <td>
+                            <input type="submit" value="submit">
+                        </td>
+                        <td>
+                            <input type="reset" value="reset">
+                        </td> -->
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
